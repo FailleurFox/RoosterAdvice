@@ -1,29 +1,30 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>fr.rooster.advice</groupId>
-    <artifactId>roosteradvice</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>roosteradvice-web</artifactId>
-  <packaging>war</packaging>
-  <name>roosteradvice-web Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <build>
-    <finalName>roosteradvice-web</finalName>
-  </build>
-  <dependencies>
-  	<dependency>
-  		<groupId>fr.rooster.advice</groupId>
-  		<artifactId>roosteradvice-services</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>fr.rooster.advice</groupId>
-  		<artifactId>roosteradvice-common</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  </dependencies>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.rooster.advice</groupId>
+		<artifactId>roosteradvice</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>roosteradvice-web</artifactId>
+	<packaging>war</packaging>
+	<name>roosteradvice-web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<build>
+		<finalName>roosteradvice-web</finalName>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>fr.rooster.advice</groupId>
+			<artifactId>roosteradvice-services</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>fr.rooster.advice</groupId>
+			<artifactId>roosteradvice-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>

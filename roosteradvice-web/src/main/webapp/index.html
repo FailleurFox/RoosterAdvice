@@ -1,8 +1,26 @@
 <head>
 <title>RoosterAdvice</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Styles -->
 <link rel="stylesheet" href="css/roosteradvice-theme.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Angular -->
+<script src="js/angular.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/route.mdl.js"></script>
+
+<!-- Hello World -->
+<!-- <script src="js/roosteradvice/helloWorld/main.mdl.js"></script> -->
+<script src="js/roosteradvice/helloWorld/main.ctrl.js"></script>
+
+<!-- Responsivity -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-	<h2>Hello World!</h2>
+<body ng-app="RoosterAdvice">
+	<div ng-controller="myCtrl">
+		<form ng-submit="helloWorld()">
+			<button type="submit" class="btn btn-default">Click Me !</button>
+			<h2>{{text}}</h2>
+		</form>
+	</div>
 </body>
