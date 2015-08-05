@@ -18,7 +18,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>fr.rooster.advice</groupId>
-			<artifactId>roosteradvice-services</artifactId>
+			<artifactId>roosteradvice-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>

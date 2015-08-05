@@ -1,5 +1,8 @@
+/**
+ * Displays "Hello World !"
+ */
 helloWorld = function(){
-    $.get("helloworld/"+1, function(data){
+    $.get("rest/helloworld/"+1, function(data){
 		$('#hello-world-label').text(data);
     });
 };

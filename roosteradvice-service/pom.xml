@@ -5,7 +5,7 @@
     <artifactId>roosteradvice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>roosteradvice-services</artifactId>
+  <artifactId>roosteradvice-service</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>fr.rooster.advice</groupId>

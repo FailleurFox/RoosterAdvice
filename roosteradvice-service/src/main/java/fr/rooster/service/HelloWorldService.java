@@ -1,4 +1,4 @@
-package fr.rooster.services;
+package fr.rooster.service;
 
 import javax.inject.Inject;
 

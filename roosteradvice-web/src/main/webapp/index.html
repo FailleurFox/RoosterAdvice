@@ -4,25 +4,17 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/roosteradvice-theme.css">
 
-<!-- Bootstrap -->
-<script src="js/lib/jquery-1.11.3.min.js"></script>
-<script src="js/lib/bootstrap.min.js"></script>
-
-<!-- Navbar -->
-<script src="js/roosteradvice/navbar.js"></script>
-
-<!-- Hello World -->
-<script src="js/roosteradvice/helloWorld/helloWorld.js"></script>
-
 <!-- Responsivity -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div id="header" class="custom-header">
+	<!-- Header -->
+	<div id="header" class="custom-header" data-speed="5">
 		<div class="intro-heading">Bienvenue !</div>
 	</div>
+	<!-- Navbar -->
 	<nav class="navbar navbar-default navbar-static-top">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -30,27 +22,56 @@
 					<span class="sr-only"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">RoosterAdvice</a>
+				<a class="navbar-brand" href="#header">RoosterAdvice</a>
 			</div>
+			<!-- Navbar collapse -->
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Accueil</a></li>
-					<li><a href="#">Lieux</a></li>
-					<li><a href="#">Clubs</a></li>
+					<li class="active"><a href="#navbar"
+						onclick="navigateTo('home')">Accueil</a></li>
+					<li><a href="#navbar" onclick="navigateTo('courses')">Parcours</a></li>
+					<li><a href="#navbar" onclick="navigateTo('places')">Lieux</a></li>
+					<li><a href="#navbar" onclick="navigateTo('clubs')">Clubs</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">À propos de l'équipe</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="">Mon Profil <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span>Aperçu</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span>Paramètres</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-off"></span>Se déconnecter</a></li>
+						</ul></li>
 				</ul>
+				<div>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Rechercher">
+						</div>
+						<button type="submit" class="btn btn-default">Rechercher</button>
+					</form>
+				</div>
 			</div>
-			<!--/.nav-collapse -->
 		</div>
 	</nav>
-	<div style="min-height: 100%;text-align: center;">
-		<button type="submit" onclick="helloWorld()" class="btn btn-default">Click
-			Me !</button>
-		<h2 id="hello-world-label"></h2>
-	</div>
+	<!-- Content -->
+	<div id="page-content"></div>
+	<!-- Footer -->
 	<footer style="background-color: #e7e7e7">
 		<span class="copyright">Copyright © RoosterAdvice 2015</span>
 	</footer>
+
+	<!-- Bootstrap -->
+	<script src="js/lib/jquery-1.11.3.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+
+	<!-- Custom js -->
+	<script src="js/roosteradvice/custom-navbar.js"></script>
+	<script src="js/roosteradvice/custom-scroll.js"></script>
+	<script src="js/roosteradvice/custom-animations.js"></script>
+	
+	<!-- Initialize the default page -->
+	<script>navigateTo('home');</script>
+
+	<!-- Home js -->
+	<script src="js/roosteradvice/helloWorld/helloWorld.js"></script>
 </body>

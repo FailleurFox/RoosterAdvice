@@ -9,6 +9,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>6.0-6</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
@@ -44,7 +50,7 @@
 	</build>
 	<packaging>pom</packaging>
 	<modules>
-		<module>roosteradvice-services</module>
+		<module>roosteradvice-service</module>
 		<module>roosteradvice-model</module>
 		<module>roosteradvice-web</module>
 		<module>roosteradvice-common</module>
